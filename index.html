@@ -31,6 +31,8 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
       rel="stylesheet"
     />
+    <!-- Wow Animation CSS-->
+    <link rel="stylesheet" href="css/animate.css" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -91,33 +93,41 @@
     </header>
     <!-- About Section-->
     <section id="about">
-      <div class="container about-container">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-md-12 pos-rel center-all">
-            <h3 class="main-title right">ABOUT <br />ME</h3>
-            <img class="about-img" src="assets/img/about-img.svg" />
+          <div class="col-lg-7 col-md-12 center-all">
+            <div class="about-img-box center-all">
+              <h3 class="main-title right">ABOUT <br />ME</h3>
+              <img class="wow fadeIn" src="assets/img/about-img.svg" />
+            </div>
           </div>
-          <div class="col-lg-4 col-md-12">
-            <h3 class="sub-title">My Story</h3>
-            <div class="content-box">
+          <div class="col-lg-5 col-md-12">
+            <h3 class="sub-title wow slideInRight">My Story</h3>
+            <div class="content-box wow slideInRight">
               <p>
-                Born in North Carolina and living in Florida, I am a graphic
-                designer and web developer with over 10 years of experience. I
-                have been doing freelance graphic design since the age of 13,
-                utilizing platforms such as Etsy and Fiverr. I started my career
-                journey in 2017 at a local shirt printer. I learned the
-                importance of customer service and print/design on demand. At
-                the beginning of 2019, I started a new digital marketing
-                position at a large insurance corporation. This job has allowed
-                me to fully utilize all my skills including graphic design, web
-                design, and other multimedia production. Since I have started, I
-                have further developed my design skills and have gained exposure
-                to a wide variety of projects and additional skills.
+                Born in North Carolina and living in Florida, I am a web
+                developer and UI designer with over 10 years of experience. I
+                have been doing freelance web design and graphic design since
+                the age of 13, utilizing platforms such as Fiverr and Etsy. I
+                started my career journey in 2017 at a local print shop. I
+                learned the importance of brand integrity, print/design on
+                demand, and working one on one with clients using programs such
+                as Adobe and WordPress. In 2019, I started a new digital
+                marketing position at a large insurance corporation. This job
+                allowed me to fully utilize all my skills including web design,
+                graphic design and other multimedia production through the use
+                of technologies such as HTML5/CSS, Bootstrap 4, JavaScript,
+                WordPress, Adobe, and Figma. At the beginning of 2021, I started
+                a new Web Developer position for a large digital marketing
+                agency where I utilized a full-scope of technologies such as
+                HTML5/CSS, Bootstrap 4+5, JavaScript, jQuery, AJAX, Hubspot,
+                Adobe, and Figma.
               </p>
             </div>
           </div>
         </div>
       </div>
+      <img class="about-img" src="assets/img/about-container-bg.svg" />
     </section>
     <!-- Skillset Section-->
     <section id="skillset"></section>
@@ -133,6 +143,11 @@
         - All Rights Reserved.
       </div>
     </footer>
+    <!-- Wow Animation -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <!-- Bootstrap core JS-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
