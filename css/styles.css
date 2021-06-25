@@ -295,6 +295,10 @@ p {
   }
 }
 
+#about .content-box p {
+  text-align: justify;
+}
+
 /* Footer Section */
 #footer {
   background-color: #020c16;
