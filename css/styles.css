@@ -87,6 +87,8 @@ h6 {
     #3f86ed
   );
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  position: relative;
+  z-index: 5;
 }
 
 /* General Styles */
@@ -105,13 +107,18 @@ p {
 }
 
 /* Nav Bar */
-
 .navbar {
   padding: 0 20px;
 }
 
 #navbarNavAltMarkup {
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 992px) {
+  #navbarNavAltMarkup {
+    margin-top: 20px;
+  }
 }
 
 /* Header Section */
@@ -132,6 +139,11 @@ p {
   overflow: hidden;
 }
 
+#header .nav-logo {
+  width: 100%;
+  max-width: 120px;
+}
+
 #header .header-content {
   padding: 150px 0;
 }
@@ -142,7 +154,86 @@ p {
   }
 }
 
-#header .header-content h1 {
+#header .header-content img {
+  width: 100%;
+  max-width: 650px;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 20px;
+}
+
+#header .header-content p {
+  margin-bottom: 20px;
+}
+/* Toggle Switch for Gravity */
+#header .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+#header .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#header .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#header .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#header input:checked + .slider {
+  background-image: linear-gradient(to right, #25aae1, #3f86ed);
+}
+
+#header input:focus + .slider {
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+#header input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+#header .slider.round {
+  border-radius: 34px;
+}
+
+#header .slider.round:before {
+  border-radius: 50%;
+}
+
+#header .gravity-text {
+  font-size: 0.6em;
+  padding: 10px;
+  font-style: italic;
+}
+
+.element-float {
   transform: translatey(0px);
   animation: float 8s ease-in-out infinite;
 }
@@ -237,6 +328,23 @@ p {
   }
 }
 
+.main-title.left {
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  .main-title.left {
+    text-align: center;
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .main-title.left br {
+    display: none;
+  }
+}
+
 .sub-title {
   color: #62a0d1;
   font-size: 1.5em;
@@ -244,11 +352,19 @@ p {
   padding: 20px 40px;
   position: relative;
   z-index: 5;
+  background: -webkit-linear-gradient(0deg, #25aae1, #4481eb, #04befe, #3f86ed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: rgb(0 0 0 / 40%) 2px 5px 6px;
 }
 
 @media screen and (max-width: 992px) {
   .sub-title {
-    color: #020c16;
+    color: #62a0d1;
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: #04befe;
+    text-shadow: rgb(0 0 0 / 60%) 2px 5px 6px;
   }
 }
 
@@ -321,7 +437,65 @@ p {
 }
 
 #about .content-box p {
-  text-align: justify;
+  text-align: left;
+}
+
+/* Skillset Section */
+
+#skillset {
+  padding: 100px 0;
+  background: #061727;
+  background: linear-gradient(
+      90deg,
+      rgba(6, 23, 39, 0.4) 0,
+      rgba(6, 23, 39, 0.4) 50%,
+      rgba(6, 23, 39, 0.4) 100%
+    ),
+    url("../assets/img/skillset-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#skillset .skillset-content {
+  background-color: rgba(98, 160, 209, 0.2);
+  padding: 20px 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  #skillset .skillset-content {
+    background-color: rgba(2, 12, 22, 0.8);
+  }
+}
+
+#skillset .skillset-content ul {
+  text-align: left;
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+#skillset .skillset-content ul li {
+  list-style: none;
+  padding: 5px;
+}
+
+#skillset .skill-title {
+  text-align: left;
+}
+
+#skillset .skill-stars {
+  float: right;
+  text-align: right;
+}
+
+#skillset .skill-stars .blue {
+  color: #04befe;
+}
+
+#skillset .skill-stars .white {
+  color: #fff;
+  opacity: 0.4;
 }
 
 /* Footer Section */
@@ -337,13 +511,13 @@ p {
     transform: translatey(0px) rotate(-1deg);
   }
   25% {
-    transform: translatey(-20px) rotate(5deg);
+    transform: translatey(-30px) rotate(3deg);
   }
   50% {
-    transform: translatey(-12px) rotate(-5deg);
+    transform: translatey(10px) rotate(-1deg);
   }
   75% {
-    transform: translatey(-17px) rotate(5deg);
+    transform: translatey(-25px) rotate(-2deg);
   }
   100% {
     transform: translatey(0px) rotate(-1deg);
@@ -356,6 +530,8 @@ p {
   height: 1px;
   opacity: 0.5;
   background: transparent;
+  position: relative;
+  z-index: 4;
   box-shadow: 1096px 1171px #fff, 1961px 1562px #fff, 1266px 1602px #fff,
     1486px 1369px #fff, 1338px 1892px #fff, 975px 1477px #fff, 1289px 724px #fff,
     451px 1319px #fff, 1287px 869px #fff, 205px 1266px #fff, 1131px 1410px #fff,
@@ -729,6 +905,8 @@ p {
   height: 2px;
   opacity: 0.5;
   background: transparent;
+  position: relative;
+  z-index: 4;
   box-shadow: 885px 277px #fff, 516px 814px #fff, 630px 975px #fff,
     1239px 1095px #fff, 71px 70px #fff, 1844px 7px #fff, 1451px 162px #fff,
     280px 450px #fff, 296px 516px #fff, 158px 1446px #fff, 21px 618px #fff,
@@ -848,6 +1026,8 @@ p {
   height: 3px;
   opacity: 0.5;
   background: transparent;
+  position: relative;
+  z-index: 4;
   box-shadow: 1993px 606px #fff, 802px 55px #fff, 1463px 705px #fff,
     1558px 1229px #fff, 1934px 773px #fff, 416px 810px #fff, 1374px 1343px #fff,
     834px 332px #fff, 918px 624px #fff, 509px 1680px #fff, 313px 1815px #fff,

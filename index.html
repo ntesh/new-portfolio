@@ -24,6 +24,13 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <!-- Wow Animation CSS-->
     <link rel="stylesheet" href="css/animate.css" />
     <!-- Bootstrap CSS -->
@@ -47,9 +54,19 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">SHOW LOGO</a>
+            <a class="navbar-brand" href="#"
+              ><img
+                src="assets/img/nicktesh-logo.svg"
+                alt="Nick Tesh"
+                class="nav-logo element"
+            /></a>
+            <span
+              ><label class="switch element">
+                <input type="checkbox" id="gravitySwitch" />
+                <span class="slider round"></span> </label
+            ></span>
             <button
-              class="navbar-toggler"
+              class="navbar-toggler element"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -61,11 +78,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                <a class="nav-link" href="#about">ABOUT</a>
-                <a class="nav-link" href="#skills">SKILLS</a>
-                <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-                <a class="nav-link" href="#contact">CONTACT</a>
+                <a class="nav-link active element" aria-current="page" href="#"
+                  >HOME</a
+                >
+                <a class="nav-link element" href="#about">ABOUT</a>
+                <a class="nav-link element" href="#skills">SKILLS</a>
+                <a class="nav-link element" href="#portfolio">PORTFOLIO</a>
+                <a class="nav-link element" href="#contact">CONTACT</a>
               </div>
             </div>
           </div>
@@ -74,10 +93,14 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-lg-12">
-                <h1>Logo Here</h1>
-                <p>More information will go here below logo</p>
+                <img
+                  src="assets/img/nicktesh-logo-text.svg"
+                  alt="Nick Tesh"
+                  class="element"
+                />
+                <p class="element">Front-End Web Developer and UI Designer</p>
                 <a href="#portfolio"
-                  ><button class="btn-primary dark-blue">
+                  ><button class="btn-primary dark-blue element">
                     VIEW PORTFOLIO
                   </button></a
                 >
@@ -92,15 +115,15 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-md-12 center-all">
-            <div class="about-img-box center-all">
-              <h3 class="main-title right">ABOUT <br />ME</h3>
-              <img class="wow fadeIn" src="assets/img/about-img.svg" />
+            <div class="about-img-box center-all element">
+              <h3 class="main-title right element">ABOUT <br />ME</h3>
+              <img class="element" src="assets/img/about-img.svg" />
             </div>
           </div>
           <div class="col-lg-5 col-md-12">
-            <h3 class="sub-title wow slideInRight">My Story</h3>
-            <div class="content-box wow slideInRight">
-              <p>
+            <h3 class="sub-title element">My Story</h3>
+            <div class="content-box element">
+              <p class="element">
                 Born in North Carolina and living in Florida, I am a web
                 developer and UI designer with over 10 years of experience. I
                 have been doing freelance web design and graphic design since
@@ -116,22 +139,142 @@
                 WordPress, Adobe, and Figma. At the beginning of 2021, I started
                 a new Web Developer position for a large digital marketing
                 agency where I utilized a full-scope of technologies such as
-                HTML5/CSS, Bootstrap4/5, JavaScript, jQuery, AJAX, Hubspot,
-                Adobe, and Figma.
+                HTML5 / CSS, Bootstrap 4/5, JavaScript, jQuery, AJAX, Adobe, and
+                Figma.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <img class="about-img" src="assets/img/about-container-bg.svg" />
+      <img class="about-img element" src="assets/img/about-container-bg.svg" />
     </section>
     <!-- Skillset Section-->
-    <section id="skillset"></section>
+    <section id="skillset">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 center-all">
+            <h3 class="main-title left element">MY <br />SKILL <br />SET</h3>
+          </div>
+          <div class="col-lg-5">
+            <h3 class="sub-title element">Web Development</h3>
+            <div class="skillset-content element">
+              <ul>
+                <li class="element">
+                  <span class="skill-title element">HTML5 / CSS </span
+                  ><span class="skill-stars"
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i>
+                  </span>
+                </li>
+                <li class="element">
+                  <span class="skill-title element">Bootstrap 4/5 </span
+                  ><span class="skill-stars"
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm white element"></i>
+                  </span>
+                </li>
+                <li class="element">
+                  <span class="skill-title element">JavaScript </span
+                  ><span class="skill-stars"
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm white element"></i
+                    ><i class="fas fa-star fa-sm white element"></i>
+                  </span>
+                </li>
+                <li class="element">
+                  <span class="skill-title element">jQuery </span
+                  ><span class="skill-stars"
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm white element"></i
+                    ><i class="fas fa-star fa-sm white element"></i>
+                  </span>
+                </li>
+                <li class="element">
+                  <span class="skill-title element">AJAX </span
+                  ><span class="skill-stars"
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm white element"></i
+                    ><i class="fas fa-star fa-sm white element"></i
+                    ><i class="fas fa-star fa-sm white element"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <h3 class="sub-title element">Graphic Design / UI Design</h3>
+            <div class="skillset-content element">
+              <ul>
+                <li class="element">
+                  <span class="skill-title element">Illustrator CC </span
+                  ><span class="skill-stars"
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i>
+                  </span>
+                </li>
+                <li class="element">
+                  <span class="skill-title element">Photoshop CC </span
+                  ><span class="skill-stars"
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i>
+                  </span>
+                </li>
+                <li class="element">
+                  <span class="skill-title element">Figma </span
+                  ><span class="skill-stars"
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm white element"></i>
+                  </span>
+                </li>
+                <li class="element">
+                  <span class="skill-title element">InDesign CC </span
+                  ><span class="skill-stars"
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm white element"></i>
+                  </span>
+                </li>
+                <li class="element">
+                  <span class="skill-title element">Adobe XD </span
+                  ><span class="skill-stars"
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm blue element"></i
+                    ><i class="fas fa-star fa-sm white element"></i
+                    ><i class="fas fa-star fa-sm white element"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Portfolio Section-->
     <section id="portfolio"></section>
     <!-- Footer-->
-    <footer id="footer">
-      <div>
+    <footer id="footer" class="element">
+      <div class="element">
         &copy; Nick Tesh
         <script>
           document.write(new Date().getFullYear());
