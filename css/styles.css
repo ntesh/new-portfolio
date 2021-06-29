@@ -446,10 +446,16 @@ p {
   padding: 100px 0;
   background: #061727;
   background: linear-gradient(
-      90deg,
-      rgba(6, 23, 39, 0.4) 0,
-      rgba(6, 23, 39, 0.4) 50%,
-      rgba(6, 23, 39, 0.4) 100%
+      180deg,
+      rgba(6, 23, 39, 0.2) 0,
+      rgba(6, 23, 39, 0.2) 30%,
+      rgba(6, 23, 39, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0) 0,
+      rgba(6, 23, 39, 0.3) 30%,
+      rgba(6, 23, 39, 1) 100%
     ),
     url("../assets/img/skillset-bg.svg");
   background-position: center;
@@ -499,132 +505,179 @@ p {
 }
 
 /* Portfolio Section */
-#portfolio .filter-controls {
-  text-align: center;
-  margin-bottom: 30px;
+#portfolio {
+  padding: 100px 0;
 }
 
-#portfolio .filter-controls .control {
-  display: inline-block;
-  width: 240px;
-  margin: 0 10px;
+#portfolio .row {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
-#portfolio .filter-controls .control * {
-  box-sizing: border-box;
+#portfolio .col-lg-4,
+#portfolio .col-md-6 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
-#portfolio .filter-controls .control .form-control {
+#portfolio a {
+  text-decoration: none;
+}
+
+#portfolio .sub-title {
+  padding-bottom: 50px;
+}
+
+#portfolio .type {
+  border: 1px solid #04befe;
+  background-color: rgba(98, 160, 209, 0.2);
+  color: #ffffff;
+  border-radius: 1000px;
+  padding: 5px;
+  margin: 3px;
+  font-size: 0.8em;
+  line-height: 2.5em;
+}
+
+#portfolio .portfolio-item {
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
   width: 100%;
-  height: 40px;
-  padding: 0 20px;
-  border: 2px solid #ccc;
-  border-radius: 3px;
-  background-color: #fff;
-  color: #666;
-  font-size: 16px;
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  height: 300px;
 }
 
-#portfolio .filter-controls .control .form-control:focus {
-  outline: 0;
-  border-color: #0caaf5;
+#portfolio .portfolio-content h3 {
+  text-transform: uppercase;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.4),
+    0px -5px 35px rgba(255, 255, 255, 0.5);
 }
 
-#portfolio .grid {
-  position: relative;
-  width: 1350px;
-  max-width: 100%;
-  margin: 0 auto;
+#portfolio .portfolio-content p {
+  padding-bottom: 10px;
+  color: #ffffff;
 }
 
-#portfolio .item {
-  position: absolute;
-  width: 260px;
-  height: 260px;
-  margin: 5px;
-  z-index: 1;
-  transition: transform 0.6s ease;
-  cursor: default;
+/* Backgrounds for Portfolio Items */
+
+#portfolio .project-1 {
+  background: #061727;
+  background: linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0.2) 0,
+      rgba(6, 23, 39, 0.2) 30%,
+      rgba(6, 23, 39, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0) 0,
+      rgba(6, 23, 39, 0.3) 30%,
+      rgba(6, 23, 39, 1) 100%
+    ),
+    url("../assets/img/skillset-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#portfolio .item.blue .custom-content {
-  border-color: #0caaf5;
-  color: #0caaf5;
+#portfolio .project-2 {
+  background: #061727;
+  background: linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0.2) 0,
+      rgba(6, 23, 39, 0.2) 30%,
+      rgba(6, 23, 39, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0) 0,
+      rgba(6, 23, 39, 0.3) 30%,
+      rgba(6, 23, 39, 1) 100%
+    ),
+    url("../assets/img/about-container-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#portfolio .item.red .custom-content {
-  border-color: #f54487;
-  color: #f54487;
+#portfolio .project-3 {
+  background: #061727;
+  background: linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0.2) 0,
+      rgba(6, 23, 39, 0.2) 30%,
+      rgba(6, 23, 39, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0) 0,
+      rgba(6, 23, 39, 0.3) 30%,
+      rgba(6, 23, 39, 1) 100%
+    ),
+    url("../assets/img/about-img.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#portfolio .item.green .custom-content {
-  border-color: #00de73;
-  color: #00de73;
+#portfolio .project-4 {
+  background: #061727;
+  background: linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0.2) 0,
+      rgba(6, 23, 39, 0.2) 30%,
+      rgba(6, 23, 39, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0) 0,
+      rgba(6, 23, 39, 0.3) 30%,
+      rgba(6, 23, 39, 1) 100%
+    ),
+    url("../assets/img/skillset-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#portfolio .item.w2 {
-  width: 530px;
+#portfolio .project-5 {
+  background: #061727;
+  background: linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0.2) 0,
+      rgba(6, 23, 39, 0.2) 30%,
+      rgba(6, 23, 39, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0) 0,
+      rgba(6, 23, 39, 0.3) 30%,
+      rgba(6, 23, 39, 1) 100%
+    ),
+    url("../assets/img/about-img.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#portfolio .item.h2 {
-  height: 530px;
-}
-
-#portfolio .item-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: table;
-  cursor: default;
-}
-
-#portfolio .custom-content {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  background: #fff;
-  color: #666;
-  border: 2px solid;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-#portfolio .item.muuri-item-dragging {
-  z-index: 3;
-  transition: none;
-}
-
-#portfolio .item.muuri-item-releasing {
-  z-index: 2;
-}
-
-@media (max-width: 877px) {
-  #portfolio .item {
-    width: calc(33.33% - 11px);
-    height: calc(33.33vw - 11px);
-  }
-  #portfolio .item.w2 {
-    width: calc(33.33% - 11px);
-  }
-  #portfolio .item.h2 {
-    height: calc(33.33vw - 11px);
-  }
-}
-@media (max-width: 640px) {
-  #portfolio .item {
-    width: calc(50% - 10px);
-    height: calc(50vw - 10px);
-  }
-  #portfolio .item.w2 {
-    width: calc(50% - 10px);
-  }
-  #portfolio .item.h2 {
-    height: calc(50vw - 10px);
-  }
+#portfolio .project-6 {
+  background: #061727;
+  background: linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0.2) 0,
+      rgba(6, 23, 39, 0.2) 30%,
+      rgba(6, 23, 39, 0.2) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(6, 23, 39, 0) 0,
+      rgba(6, 23, 39, 0.3) 30%,
+      rgba(6, 23, 39, 1) 100%
+    ),
+    url("../assets/img/skillset-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Footer Section */
